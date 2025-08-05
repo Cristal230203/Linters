@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <title>🏎️VOTACION F1🏎️</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="../img/f1.png" alt="F1 logo" class="logo" />
+      <h1>🏁Formulario de Votación F1🏁</h1>
+    </div>
+
+    <div class="container">
+      <form id="Formulario">
+        <div class="form-group">
+          <label for="name">Nombre Completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            autofocus
+            placeholder="Por favor ingresa tu nombre"
+          />
+        </div>
+
+        <div>
+          <label for="email">Correo Electronico</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="Por favor ingresa tu correo electronico"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Edad</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Por favor ingresa tu edad"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="opinion">¿Cual es tu escuderia favorita?</label>
+          <select id="opinion" name="opinion" required>
+            <option value="">Seleccciona una opcion</option>
+            <option value="Red Bull Racing">Red Bull Racing</option>
+            <option value="Mercedes-AMG">Mercedes-AMG</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="McLaren">McLaren</option>
+            <option value="Alpine">Alpine</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Williams">Williams</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="question">¿Desde cuándo sigues la Fórmula 1?</p>
+          <label class="radio-label">
+            <input type="radio" name="años" value="Menos de 1 Año" />
+            Menos de 1 Año
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="años" value="De 1 a 3 Años" />
+            De 1 a 3 Años
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="años" value="Más de 3 Años" />
+            Más de 3 Años
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="brand">¿Cuál es tu piloto favorito?</label>
+          <select id="brand" name="brand" required>
+            <option value="">Selecciona un piloto</option>
+            <option value="Lewis Hamilton">Lewis Hamilton</option>
+            <option value="Max Verstappen">Max Verstappen</option>
+            <option value="Charles Leclerc">Charles Leclerc</option>
+            <option value="Sergio Pérez">Sergio Pérez</option>
+            <option value="Fernando Alonso">Fernando Alonso</option>
+            <option value="Lando Norris">Lando Norris</option>
+            <option value="Carlos Sainz">Carlos Sainz</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="question">¿Quién cree que ganará esta temporada?</p>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Red Bull Racing" />
+            Red Bull Racing
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Mercedes-AMG" />
+            Mercedes-AMG
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Ferrari" />
+            Ferrari
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="McLaren" />
+            McLaren
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Alpine" />
+            Alpine
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Aston Martin" />
+            Aston Martin
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Williams" />
+            Williams
+          </label>
+          <label class="box">
+            <input type="checkbox" name="buyCar" value="Otro" />
+            Otro
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios"
+            >¿Tienes algún comentario o pronóstico?</label
+          >
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="4"
+            placeholder="Escribe aquí tu opinión…"
+          ></textarea>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
