@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(#1d327e 0%, #120d3d 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  background: #cbc4e9;
+  top: 10%;
+  left: 5%;
+}
+
+body::after {
+  width: 400px;
+  height: 400px;
+  background: #ac1616;
+  bottom: 10%;
+  right: 5%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  background-color: #f4f1f1;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba (0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #430b19;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #d1d5da;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.question {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #430b19;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  color: #430b19;
+  margin-bottom: 10px;
+}
+
+.radio-label,
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #430b19;
+  white-space: nowrap;
+  text-align: left;
+  width: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.btn-submit {
+  background-color: #430b19;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #5a0f1f;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
